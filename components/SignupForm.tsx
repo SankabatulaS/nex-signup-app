@@ -65,6 +65,7 @@ const SignupForm: React.FC<SignupFormProps> = ({ fields }) => {
                   aria-label={field.name}
                   name={field.name}
                   defaultValue={field.defaultValue ? "Yes": "No"}
+                  style={{display: "flex", flexDirection: "row"}}
                   // onChange={(e) => setSelectedValue(e.target.value)}
                 >
                   {field.listOfValues1?.map((option) => (
